@@ -60,7 +60,15 @@ var service =
     objectStore : { 'us-phoenix-1' : 'objectstorage.us-phoenix-1.oraclecloud.com',
                     'us-ashburn-1' : 'objectstorage.us-ashburn-1.oraclecloud.com',
                     'eu-frankfurt-1' : 'objectstorage.eu-frankfurt-1.oraclecloud.com',
-                    'uk-london-1' : 'objectstorage.uk-london-1.oraclecloud.com' } 
+                    'uk-london-1' : 'objectstorage.uk-london-1.oraclecloud.com' },
+    waas: { 'us-phoenix-1': 'waas.us-phoenix-1.oraclecloud.com',
+            'us-ashburn-1': 'waas.us-ashburn-1.oraclecloud.com',
+            'eu-frankfurt-1': 'waas.eu-frankfurt-1.oraclecloud.com',
+            'uk-london-1': 'waas.uk-london-1.oraclecloud.com',
+            'ca-toronto-1': 'waas.ca-toronto-1.oraclecloud.com',
+            'ap-mumbai-1': 'waas.ap-mumbai-1.oraclecloud.com',
+            'ap-seoul-1': 'waas.ap-seoul-1.oraclecloud.com',
+            'ap-tokyo-1': 'waas.ap-tokyo-1.oraclecloud.com'}
   };
                
 module.exports = {
