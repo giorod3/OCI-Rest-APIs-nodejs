@@ -1,7 +1,17 @@
 var ocirest = require('../../utils/ocirest.js');
 var endpoint = require('../../configs/endpoints.js');
 
-
+function get( auth, parameters, callback ) {
+    var possibleHeaders = ['opc-request-id'];
+    var headers = ocirest.buildHeaders( possibleHeaders, parameters );
+    ocirest.process( auth,
+        { path : auth.RESTversion +
+                '/waasPolicies/' + encodeURIComponent(parameters.waasPolicyId),
+            host : endpoint.service.waas[auth.region],
+            headers : headers,
+            method : 'GET' },
+        callback );
+};
 
 function list( auth, parameters, callback ) {
   var possibleHeaders = ['opc-request-id'];
@@ -18,5 +28,6 @@ function list( auth, parameters, callback ) {
 };
 
 module.exports = {
-    list: list
+    list: list,
+    get: get
 };
