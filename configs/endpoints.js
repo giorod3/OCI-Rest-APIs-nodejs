@@ -60,7 +60,18 @@ var service =
     objectStore : { 'us-phoenix-1' : 'objectstorage.us-phoenix-1.oraclecloud.com',
                     'us-ashburn-1' : 'objectstorage.us-ashburn-1.oraclecloud.com',
                     'eu-frankfurt-1' : 'objectstorage.eu-frankfurt-1.oraclecloud.com',
-                    'uk-london-1' : 'objectstorage.uk-london-1.oraclecloud.com' } 
+                    'uk-london-1' : 'objectstorage.uk-london-1.oraclecloud.com' },
+autoscale: {
+            'us-phoenix-1': 'autoscaling.us-phoenix-1.oci.oraclecloud.com',
+            'us-ashburn-1': 'autoscaling.us-ashburn-1.oci.oraclecloud.com',
+            'eu-frankfurt-1': 'autoscaling.eu-frankfurt-1.oci.oraclecloud.com',
+            'uk-london-1': 'autoscaling.uk-london-1.oci.oraclecloud.com',
+            'ca-toronto-1': 'autoscaling.ca-toronto-1.oci.oraclecloud.com',
+            'ap-mumbai-1': 'autoscaling.ap-mumbai-1.oci.oraclecloud.com',
+            'ap-seoul-1': 'autoscaling.ap-seoul-1.oci.oraclecloud.com',
+            'ap-tokyo-1': 'autoscaling.ap-tokyo-1.oci.oraclecloud.com'
+
+        }
   };
                
 module.exports = {

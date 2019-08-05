@@ -1,4 +1,5 @@
 var amazon = require( './services/amazon.js' );
+var autoscale = require( './services/autoscale.js' );
 var database = require( './services/database.js' );
 var objectStore = require( './services/objectStore.js' );
 var core = require( './services/core.js' );
@@ -16,6 +17,7 @@ var myServices = require( './services/myServices.js')
 
 module.exports = {
     amazon: amazon,
+    autoscale: autoscale,
     myServices: myServices,
     database: database,
     objectStore: objectStore,
